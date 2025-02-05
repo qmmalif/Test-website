@@ -1,0 +1,11 @@
+ 0    chain=forward action=mark-connection new-connection-mark=download 
+      passthrough=yes dst-address=192.168.70.0/28 log=no log-prefix="" 
+
+ 1    chain=forward action=mark-connection new-connection-mark=upload 
+      passthrough=yes src-address=192.168.70.0/28 log=no log-prefix="" 
+
+ 2    chain=forward action=mark-packet new-packet-mark=packet_download 
+      passthrough=yes connection-mark=download log=no log-prefix="" 
+
+ 3    chain=forward action=mark-packet new-packet-mark=packet_upload 
+      passthrough=yes connection-mark=upload log=no log-prefix="" 

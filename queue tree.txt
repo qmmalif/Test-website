@@ -1,0 +1,15 @@
+ 0   name="total download" parent=global packet-mark="" limit-at=0 
+     queue=default-small priority=8 max-limit=10M burst-limit=0 
+     burst-threshold=0 burst-time=0s bucket-size=0.1 
+
+ 1   name="total upload" parent=global packet-mark="" limit-at=0 
+     queue=default-small priority=8 max-limit=10M burst-limit=0 
+     burst-threshold=0 burst-time=0s bucket-size=0.1 
+
+ 2   name="user download" parent=total download packet-mark=packet_download 
+     limit-at=1M queue=default-small priority=8 max-limit=5M burst-limit=0 
+     burst-threshold=0 burst-time=0s bucket-size=0.1 
+
+ 3   name="user upload" parent=total upload packet-mark=packet_upload limit-at=1M 
+     queue=default-small priority=8 max-limit=5M burst-limit=0 
+     burst-threshold=0 burst-time=0s bucket-size=0.1 
