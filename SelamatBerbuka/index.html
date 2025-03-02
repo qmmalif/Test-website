@@ -1,14 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selamat Berbuka Puasaa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Berbuka Puasa</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<script>
+  // Mencegah scroll pada perangkat mobile dengan mencegah default pada event touchmove
+  document.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+  }, { passive: false });
+</script>
+
 <body>
-    <html>
-        <p>Selamat Berbukaa</p>
-        <p>Day 1</p>
-    </html>
+  <div class="container">
+    <!-- Ornamen ketupat yang menempel di atas kontainer -->
+        <div class="ketupat">
+        <svg width="80" height="80" viewBox="0 0 100 100">
+            <polygon points="50,10 90,50 50,90 10,50" style="fill:#e8f5e9;stroke:#66bb6a;stroke-width:5" />
+        </svg>
+        </div>
+    <h1>Selamat Buka Puasa!</h1>
+    <p>Berbukalah dengan yang manis spertiku 😏😏</p>
+  </div>
+
+  <footer>
+    <div class="text-footer">
+      <h6>Selamat menunaikan ibadah puasa. Day 2</h6>
+    </div>
+  </footer>
 </body>
-</html>
