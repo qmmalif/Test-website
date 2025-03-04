@@ -57,7 +57,6 @@ p {
   color: #000000;
   font-size: 1.1rem;
   margin: 0;
-  
 }
 
 /* Styling Footer */
@@ -68,4 +67,11 @@ footer {
   width: 100%;
   color: #fff;
   text-align: center;
+}
+
+/* Tambahan styling untuk jam digital */
+#clock {
+  font-size: 1rem;
+  color: #2e7d32;
+  margin-top: 1rem;
 }
