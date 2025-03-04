@@ -12,22 +12,28 @@
     e.preventDefault();
   }, { passive: false });
 </script>
-
 <body>
   <div class="container">
     <!-- Ornamen ketupat yang menempel di atas kontainer -->
-        <div class="ketupat">
-        <svg width="80" height="80" viewBox="0 0 100 100">
-            <polygon points="50,10 90,50 50,90 10,50" style="fill:#e8f5e9;stroke:#66bb6a;stroke-width:5" />
-        </svg>
-        </div>
+    <div class="ketupat">
+      <svg width="80" height="80" viewBox="0 0 100 100">
+          <polygon points="50,10 90,50 50,90 10,50" style="fill:#e8f5e9;stroke:#66bb6a;stroke-width:5" />
+      </svg>
+    </div>
     <h1>Selamat Buka Puasa!</h1>
     <p>Berbukalah dengan yang manis spertiku 😏😏</p>
+    
+    <!-- Tempat untuk menampilkan jam digital waktu Jakarta -->
+    <div id="clock">00:00:00</div>
   </div>
 
   <footer>
     <div class="text-footer">
-      <h6>Selamat menunaikan ibadah puasa. Day 3</h6>
+      <h6>Selamat menunaikan ibadah puasa. Day 2</h6>
     </div>
   </footer>
+
+  <!-- Memanggil file JavaScript eksternal untuk jam digital -->
+  <script src="clock.js"></script>
 </body>
+</html>
